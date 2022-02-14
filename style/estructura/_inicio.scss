@@ -1,0 +1,30 @@
+.inicio {
+  &__sircharly {
+    color: #ba181b;
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 0rem 4rem 0rem 0rem;
+  }
+
+  &__frase {
+    font-size: 1.7rem;
+    padding: 0rem 3.2rem 0rem 0rem;
+  }
+
+  .boton__tienda {
+    font-family: "Bebas Neue";
+    font-size: 1.7em;
+    background-color: transparent;
+    border: groove;
+    font-weight: 100;
+    padding: 0px 2rem;
+    margin: 0rem 7.8rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .boton__tienda :hover {
+    transform: scale(1.1, 1.1);
+    background-color: rgba(143, 135, 135, 0.322);
+  }
+}
