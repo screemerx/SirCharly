@@ -1,0 +1,36 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "Proyecto para conocer un poco mas de la marca (SirCharly), tmb posee una pequeño ecomerce para que los clientes tengan una medio digital para poder acceder a los productos",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/screemerx/SirCharly.git"
+  },
+  "keywords": [
+    "Cerveza",
+    "artesanal",
+    "Chopp",
+    "Ofertas",
+    "cerveza",
+    "artesanal",
+    "alquiler",
+    "de",
+    "chopp",
+    "estilos",
+    "de",
+    "cervezas",
+    "bares",
+    "cerveza",
+    "hidromiel"
+  ],
+  "author": "Juan Sebastian Valdez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/screemerx/SirCharly/issues"
+  },
+  "homepage": "https://github.com/screemerx/SirCharly#readme"
+}

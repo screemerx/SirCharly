@@ -1,0 +1,12 @@
+.contacto {
+  background-color: #161a1d;
+  color: white;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  padding: 4rem;
+
+  &__titulo {
+    font-size: 2rem;
+  }
+}

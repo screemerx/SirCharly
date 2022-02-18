@@ -1,0 +1,21 @@
+.clientes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.1rem;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+  background-color: #660708;
+  color: white;
+  border: solid goldenrod;
+}
+
+.cliente {
+  color: goldenrod;
+  grid-column: 1/5;
+
+  &__color {
+    color: goldenrod;
+  }
+}

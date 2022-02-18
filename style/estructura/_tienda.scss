@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Bebas Neue";
+}
+
+.header {
+  width: 100%;
+  clear: both;
+  text-align: right;
+  display: inline;
+  position: absolute;
+
+  &__logo {
+    max-width: 4%;
+    margin: auto;
+    float: left;
+    padding: 15px;
+  }
+  &__titulo {
+    float: left;
+    font-size: 1.2rem;
+    padding: 1.2rem 0rem 0rem 0rem;
+  }
+
+  .header__nav {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: nowrap;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__nav--subrayado {
+    text-decoration: none;
+    color: black;
+  }
+  &__nav__subrayado :hover {
+    text-decoration: underline;
+  }
+}
+
+.portada {
+  background-image: url(/backgroundprueba/3beer.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  contain: style;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton__tienda {
+  padding: 0rem 2rem;
+  font-size: 3rem;
+  border: solid black;
+  text-decoration: none;
+  color: black;
+
+  &__tienda--hover {
+    transform: scale(1.1, 1.1);
+    background-color: rgba(143, 135, 135, 0.322);
+  }
+}
+
+.shop {
+  background-color: whitesmoke;
+
+  &__galeria {
+    margin: 6rem;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+.galeriabeer {
+  width: 20rem;
+}
+
+.botton__producto {
+  font-family: "Bebas Neue";
+  font-size: 1em;
+  background-color: rgb(221, 29, 29);
+  border-radius: 4px;
+  font-weight: 100;
+  padding: 1rem;
+  margin: 0rem 1rem 0rem;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+
+  &__producto :hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .shop__galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .shop__galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .shop__galeria {
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .shop__galeria {
+    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}

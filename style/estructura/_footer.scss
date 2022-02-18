@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  align-items: center;
+
+  &__nav {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__nav--subrayado {
+    text-decoration: none;
+    color: black;
+  }
+}

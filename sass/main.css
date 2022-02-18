@@ -25,13 +25,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-flow: nowrap;
-  flex-flow: nowrap;
+      flex-flow: nowrap;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: black;
 }
@@ -71,8 +71,360 @@
 
 .inicio .boton__tienda :hover {
   -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
   background-color: rgba(143, 135, 135, 0.322);
+}
+
+.estilo__display {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.estilo__display__imagen {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+}
+
+.estilo__display__beer {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+}
+
+.leyenda {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.leyenda__texto {
+  background-color: #161a1d;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leyenda__dragon {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  background: radial-gradient(#000000, #c7c7c7, #000000);
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: -2;
+  grid-row: 3/1;
+}
+
+.clientes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+  background-color: #660708;
+  color: white;
+  border: solid goldenrod;
+}
+
+.cliente {
+  color: goldenrod;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.cliente__color {
+  color: goldenrod;
+}
+
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #660708;
+  color: white;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+}
+
+.nosotros__texto {
+  color: goldenrod;
+}
+
+.nosotros__imagen {
+  padding: 2rem;
+}
+
+.contacto {
+  background-color: #161a1d;
+  color: white;
+  display: block;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+}
+
+.contacto__titulo {
+  font-size: 2rem;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Bebas Neue";
+}
+
+.header {
+  width: 100%;
+  clear: both;
+  text-align: right;
+  display: inline;
+  position: absolute;
+}
+
+.header__logo {
+  max-width: 4%;
+  margin: auto;
+  float: left;
+  padding: 15px;
+}
+
+.header__titulo {
+  float: left;
+  font-size: 1.2rem;
+  padding: 1.2rem 0rem 0rem 0rem;
+}
+
+.header .header__nav {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.header__nav--subrayado {
+  text-decoration: none;
+  color: black;
+}
+
+.header__nav__subrayado :hover {
+  text-decoration: underline;
+}
+
+.portada {
+  background-image: url(/backgroundprueba/3beer.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  contain: style;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boton__tienda {
+  padding: 0rem 2rem;
+  font-size: 3rem;
+  border: solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.boton__tienda__tienda--hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  background-color: rgba(143, 135, 135, 0.322);
+}
+
+.shop {
+  background-color: whitesmoke;
+}
+
+.shop__galeria {
+  margin: 6rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+  justify-items: center;
+}
+
+.galeriabeer {
+  width: 20rem;
+}
+
+.botton__producto {
+  font-family: "Bebas Neue";
+  font-size: 1em;
+  background-color: #dd1d1d;
+  border-radius: 4px;
+  font-weight: 100;
+  padding: 1rem;
+  margin: 0rem 1rem 0rem;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+}
+
+.botton__producto__producto :hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .shop__galeria {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .shop__galeria {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .shop__galeria {
+    overflow: hidden;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .shop__galeria {
+    overflow: hidden;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: whitesmoke;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__nav--subrayado {
+  text-decoration: none;
+  color: black;
 }
 
 .conocebeer {
@@ -81,15 +433,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: solid goldenrod;
 }
 
@@ -118,6 +470,6 @@
 
 .conocebeer__button :hover {
   -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 /*# sourceMappingURL=main.css.map */

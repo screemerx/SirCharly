@@ -188,7 +188,6 @@ nav ul li {
 }
 
 .cliente {
-  color: goldenrod;
   grid-column: 1/5;
 }
 
@@ -227,7 +226,7 @@ nav ul li {
   width: 100%;
   height: 100%;
   height: 100vh;
-  padding: 2rem;
+  overflow: hidden;
 }
 
 .nosotros__texto {
@@ -254,4 +253,17 @@ nav ul li {
 .footer__nav--subrayado {
   text-decoration: none;
   color: black;
+}
+
+.contacto {
+  background-color: #161a1d;
+  color: white;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.contacto__titulo {
+  font-size: 2rem;
 }
