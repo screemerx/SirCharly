@@ -10,3 +10,45 @@
     font-size: 2rem;
   }
 }
+
+.contactate {
+  background-image: url(/backgroundprueba/portadacontacto.jpg);
+  height: 65vh;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: 50% 50%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #161a1d;
+  &__titulo {
+    color: black;
+    font-size: 3rem;
+  }
+}
+
+.contactate__wsp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #660708;
+  height: 20vh;
+
+  &--titulo {
+    font-size: 2rem;
+  }
+}
+
+.boton__contacto {
+  padding: 0rem 2rem;
+  font-size: 3rem;
+  border: solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.boton__contacto:hover {
+  transform: scale(1.1, 1.1);
+  background-color: rgba(48, 138, 30, 0.555);
+}

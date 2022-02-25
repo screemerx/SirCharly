@@ -1,17 +1,81 @@
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: whitesmoke;
-  align-items: center;
+  width: 100%;
+  background-color: grey;
 
-  &__nav {
-    text-decoration: none;
-    color: black;
+  &__1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
   }
 
-  &__nav--subrayado {
+  &__box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 150px;
+  }
+
+  &__box--titulo {
+    color: white;
+  }
+
+  &__red-social a {
+    display: inline-block;
     text-decoration: none;
-    color: black;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #535353;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+
+  &__red-social a:hover {
+    color: #660708;
+  }
+
+  &__2 {
+    background-color: dimgrey;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__2 small {
+    font-size: 1rem;
+  }
+
+  &__box--legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 4rem;
+  }
+  &__box--legal--subrayado {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+  }
+  &__box--legal--subrayado:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer__1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
   }
 }

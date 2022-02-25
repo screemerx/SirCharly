@@ -5,13 +5,13 @@
   font-family: "Bebas Neue";
 }
 
-.logo {
+.header__logo {
   max-width: 4%;
   margin: auto;
   float: left;
   padding: 15px;
 }
-.logo--titulo {
+.header__titulo {
   float: left;
   font-size: 1.2rem;
   padding: 1.8rem 0rem 0rem 0rem;
@@ -27,7 +27,7 @@ header {
   position: absolute;
 }
 
-.barra {
+.header__nav {
   font-size: 2rem;
   display: flex;
   justify-content: flex-end;
@@ -36,6 +36,14 @@ header {
   padding: 0rem 2rem;
 }
 
+.header__nav--subrayado {
+  text-decoration: none;
+  color: black;
+}
+
+.header__nav--subrayado:hover {
+  text-decoration: underline;
+}
 .portada {
   background-image: url(/backgroundprueba/3beer.png);
   background-repeat: no-repeat;

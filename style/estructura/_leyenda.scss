@@ -1,3 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Bebas Neue";
+}
+
+.header__leyenda {
+  width: 100%;
+  clear: both;
+  text-align: right;
+  display: inline;
+  position: absolute;
+  background: white;
+
+  &--logo {
+    max-width: 4%;
+    margin: auto;
+    float: left;
+    padding: 15px;
+  }
+
+  &--titulo {
+    float: left;
+    font-size: 1.2rem;
+    padding: 1rem 0rem 0rem 0rem;
+    margin-top: 1.2rem;
+  }
+
+  &--nav {
+    margin: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: nowrap;
+    align-items: center;
+    list-style: none;
+  }
+
+  &--nav--subrayado {
+    margin: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  &--nav--subrayado:hover {
+    text-decoration: underline;
+  }
+}
+
+.comienzo {
+  height: 70vh;
+  background-position: 50% 50%;
+  background-image: url(/backgroundprueba/sircharly.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__titulo {
+    font-size: 3rem;
+  }
+}
+
+.boton__tienda {
+  font-family: "Bebas Neue";
+  font-size: 1.7em;
+  background-color: transparent;
+  border: groove;
+  font-weight: 100;
+  padding: 0px 2rem;
+  margin: 0rem 7.8rem;
+  text-decoration: none;
+  color: black;
+}
+
+.boton__tienda:hover {
+  transform: scale(1.1, 1.1);
+  background-color: rgba(143, 135, 135, 0.322);
+}
+
+.nuestra__leyenda {
+  background: grey;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  &--titulo {
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+}
+
 .leyenda {
   color: white;
   display: grid;
@@ -16,6 +112,10 @@
     height: 100vh;
     text-align: center;
     align-items: center;
+  }
+
+  &__titulo {
+    font-size: 2rem;
   }
 
   &__dragon {

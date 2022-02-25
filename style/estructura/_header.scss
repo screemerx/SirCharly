@@ -1,3 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Bebas Neue";
+}
+
 .header {
   width: 100%;
   clear: both;
@@ -11,27 +18,30 @@
     float: left;
     padding: 15px;
   }
+
   &__titulo {
     float: left;
     font-size: 1.2rem;
-    padding: 1.2rem 0rem 0rem 0rem;
+    padding: 3rem 0rem 0rem 0rem;
+    margin-top: 1.2rem;
   }
 
-  .header__nav {
+  &__nav {
+    margin: 2rem;
     font-size: 2rem;
     display: flex;
     justify-content: flex-end;
     flex-flow: nowrap;
     align-items: center;
-    text-decoration: none;
+    list-style: none;
     color: black;
   }
 
   &__nav--subrayado {
-    text-decoration: none;
-    color: black;
+    margin: 2rem;
   }
-  &__nav__subrayado :hover {
+
+  &__nav--subrayado:hover {
     text-decoration: underline;
   }
 }

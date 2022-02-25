@@ -1,3 +1,20 @@
+.fabrica {
+  background-image: url(/backgroundprueba/fabricabaner.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  background-color: gray;
+
+  &__titulo {
+    font-size: 3rem;
+  }
+}
+
 .nosotros {
   display: flex;
   text-align: center;
