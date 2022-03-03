@@ -7,24 +7,22 @@
 
 .header {
   width: 100%;
+  height: 100px;
   clear: both;
   text-align: right;
   display: inline;
-  position: absolute;
+  position: fixed;
 }
 
 .header__logo {
-  max-width: 4%;
   margin: auto;
-  float: left;
-  padding: 15px;
+  line-height: 50px;
 }
 
 .header__titulo {
-  float: left;
   font-size: 1.2rem;
-  padding: 3rem 0rem 0rem 0rem;
-  margin-top: 1.2rem;
+  line-height: 50px;
+  color: black;
 }
 
 .header__nav {
@@ -51,6 +49,14 @@
 
 .header__nav--subrayado:hover {
   text-decoration: underline;
+}
+
+.menu {
+  background: none;
+  border: none;
+  font-size: 30px;
+  line-height: 60px;
+  display: none;
 }
 
 .inicio {
@@ -106,6 +112,21 @@
   background-color: rgba(143, 135, 135, 0.322);
 }
 
+@media (max-width: 768px) {
+  .inicio {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inicio__sircharly {
+    text-align: center;
+    padding: 0;
+  }
+  .inicio__frase {
+    padding: 0;
+  }
+}
+
 .estilo__display {
   display: -ms-grid;
   display: grid;
@@ -114,23 +135,48 @@
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white;
 }
 
 .estilo__imagen {
   width: 100%;
   height: 100%;
-  height: 100vh;
 }
 
 .estilo__beer {
   background-color: black;
   width: 100%;
   height: 100%;
-  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .estilo__display {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+  }
+  .estilo__imagen {
+    width: 100%;
+    height: 100%;
+    height: 50vh;
+    background-color: #161a1d;
+  }
 }
 
 * {
@@ -145,19 +191,11 @@
   clear: both;
   text-align: right;
   display: inline;
-  position: absolute;
+  position: fixed;
   background: white;
 }
 
-.header__leyenda--logo {
-  max-width: 4%;
-  margin: auto;
-  float: left;
-  padding: 15px;
-}
-
 .header__leyenda--titulo {
-  float: left;
   font-size: 1.2rem;
   padding: 1rem 0rem 0rem 0rem;
   margin-top: 1.2rem;
@@ -298,6 +336,55 @@
   grid-row: 3/1;
 }
 
+@media (max-width: 768px) {
+  .header__leyenda {
+    width: 100%;
+    clear: both;
+    text-align: right;
+    position: fixed;
+    background: whitesmoke;
+    height: 100px;
+  }
+  .header__leyenda--logo {
+    line-height: 100px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .header__leyenda--titulo {
+    font-size: 1.2rem;
+    padding: 1rem 0rem 0rem 0rem;
+    margin-top: 1.2rem;
+  }
+  .header__leyenda--nav {
+    margin: 2rem;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__leyenda--nav--subrayado {
+    margin: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+  .header__leyenda--nav--subrayado:hover {
+    text-decoration: underline;
+  }
+}
+
 .clientes {
   display: -ms-grid;
   display: grid;
@@ -328,6 +415,38 @@
 
 .cliente__color {
   color: goldenrod;
+}
+
+@media (max-width: 768px) {
+  .clientes {
+    padding: 2rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+  }
+  .cliente {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    margin: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .clientes {
+    padding: 2rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+  }
+  .cliente {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    margin: 1.5rem;
+  }
 }
 
 .fabrica {
@@ -778,5 +897,13 @@
 .conocebeer__button:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 768px) {
+  .conocebeer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

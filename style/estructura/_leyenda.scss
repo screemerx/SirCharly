@@ -10,18 +10,13 @@
   clear: both;
   text-align: right;
   display: inline;
-  position: absolute;
+  position: fixed;
   background: white;
 
   &--logo {
-    max-width: 4%;
-    margin: auto;
-    float: left;
-    padding: 15px;
   }
 
   &--titulo {
-    float: left;
     font-size: 1.2rem;
     padding: 1rem 0rem 0rem 0rem;
     margin-top: 1.2rem;
@@ -125,5 +120,48 @@
     background: radial-gradient(#000000, #c7c7c7, #000000);
     grid-column: 2/3;
     grid-row: 3/1;
+  }
+}
+@media (max-width: 768px) {
+  .header__leyenda {
+    width: 100%;
+    clear: both;
+    text-align: right;
+
+    position: fixed;
+    background: whitesmoke;
+    height: 100px;
+
+    &--logo {
+      line-height: 100px;
+      flex-wrap: nowrap;
+    }
+
+    &--titulo {
+      font-size: 1.2rem;
+      padding: 1rem 0rem 0rem 0rem;
+      margin-top: 1.2rem;
+    }
+
+    &--nav {
+      margin: 2rem;
+      font-size: 2rem;
+      display: flex;
+      justify-content: flex-end;
+      flex-flow: nowrap;
+      align-items: center;
+      list-style: none;
+      flex-direction: column;
+    }
+
+    &--nav--subrayado {
+      margin: 2rem;
+      text-decoration: none;
+      color: black;
+    }
+
+    &--nav--subrayado:hover {
+      text-decoration: underline;
+    }
   }
 }

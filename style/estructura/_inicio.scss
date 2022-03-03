@@ -40,3 +40,18 @@
     background-color: rgba(143, 135, 135, 0.322);
   }
 }
+
+@media (max-width: 768px) {
+  .inicio {
+    align-items: center;
+
+    &__sircharly {
+      text-align: center;
+      padding: 0;
+    }
+
+    &__frase {
+      padding: 0;
+    }
+  }
+}
