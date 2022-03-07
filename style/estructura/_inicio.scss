@@ -41,10 +41,57 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .inicio {
+    align-items: center;
+    height: 85vh;
+
+    &__sircharly {
+      text-align: center;
+      padding: 0;
+    }
+
+    &__frase {
+      font-size: 1.7rem;
+      padding: 0rem 3.2rem 0rem 0rem;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .inicio {
     align-items: center;
+    height: 60vh;
+    &__sircharly {
+      text-align: center;
+      padding: 0;
+    }
 
+    &__frase {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .inicio {
+    align-items: center;
+    height: 35vh;
+    &__sircharly {
+      text-align: center;
+      padding: 0;
+    }
+
+    &__frase {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .inicio {
+    align-items: center;
+    height: 32vh;
     &__sircharly {
       text-align: center;
       padding: 0;

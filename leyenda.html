@@ -18,46 +18,40 @@
     ></script>
   </head>
   <body>
-    <header class="header__leyenda">
-      <a href="index.html">
-        <img src="/iconos/logosinfondo.png" class="header__logo" alt="" />
-        <h2 class="header__titulo">Sir Charly</h2>
-      </a>
-      <nav>
-        <ul class="header__leyenda--nav">
+    <header>
+      <nav class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/iconos/logosinfondo.png" class="header__logo" alt="" />
+            <h2 class="header__titulo">Sir Charly</h2>
+          </a>
+        </div>
+
+        <ul class="header__nav">
           <li>
-            <a class="header__leyenda--nav--subrayado" href="index.html">
-              Inicio
-            </a>
+            <a class="header__nav--subrayado" href="index.html"> Inicio </a>
           </li>
           <li>
-            <a class="header__leyenda--nav--subrayado" href="leyenda.html">
-              Leyenda</a
-            >
+            <a class="header__nav--subrayado" href="leyenda.html"> Leyenda</a>
           </li>
           <li>
-            <a class="header__leyenda--nav--subrayado" href="nosotros.html"
-              >Nosotros</a
-            >
+            <a class="header__nav--subrayado" href="nosotros.html">Nosotros</a>
           </li>
+          <li><a class="header__nav--subrayado" href="shop.html">Tienda</a></li>
           <li>
-            <a class="header__leyenda--nav--subrayado" href="shop.html"
-              >Tienda</a
-            >
-          </li>
-          <li>
-            <a class="header__leyenda--nav--subrayado" href="contacto.html"
-              >Contacto</a
-            >
+            <a class="header__nav--subrayado" href="contacto.html">Contacto</a>
           </li>
           <li>
             <a
-              class="header__leyenda--nav--subrayado-carro"
+              class="header__nav--subrayado-carro"
               href="carritodecompras.html"
             >
               <img src="iconos/beers.png" width="35" height="35" />
             </a>
           </li>
+          <button class="menu">
+            <img src="/assets/menu.svg" alt="" />
+          </button>
         </ul>
       </nav>
     </header>
@@ -106,7 +100,7 @@
           </p>
         </div>
         <div class="leyenda__dragon">
-          <img src="/dragon/dragon.png" width="100%" height="100%" />
+          <img src="/dragon/dragon.png" class="leyenda__imagen" />
         </div>
       </div>
     </section>

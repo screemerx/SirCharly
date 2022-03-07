@@ -1,48 +1,3 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  font-size: 20px;
-  font-family: "Bebas Neue";
-}
-
-.header {
-  width: 100%;
-  clear: both;
-  text-align: right;
-  display: inline;
-  position: absolute;
-
-  &__logo {
-    max-width: 4%;
-    margin: auto;
-    float: left;
-    padding: 15px;
-  }
-  &__titulo {
-    float: left;
-    font-size: 1.2rem;
-    padding: 1.2rem 0rem 0rem 0rem;
-  }
-
-  .header__nav {
-    font-size: 2rem;
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: nowrap;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-  }
-
-  &__nav--subrayado {
-    text-decoration: none;
-    color: black;
-  }
-  &__nav__subrayado:hover {
-    text-decoration: underline;
-  }
-}
-
 .portada {
   background-image: url(/backgroundprueba/3beer.png);
   background-repeat: no-repeat;
@@ -68,6 +23,11 @@
     transform: scale(1.1, 1.1);
     background-color: rgba(143, 135, 135, 0.322);
   }
+}
+
+.boton__tienda:hover {
+  transform: scale(1.1, 1.1);
+  background-color: rgba(143, 135, 135, 0.322);
 }
 
 .shop {
