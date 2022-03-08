@@ -11,6 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background-color: white;
 
   &__logo {
     margin: auto;
@@ -46,7 +48,7 @@
   }
 
   &__nav--subrayado {
-    margin: 2rem;
+    margin: 1.5rem;
     text-decoration: none;
     color: #000;
   }
@@ -97,7 +99,7 @@
       align-items: center;
 
       list-style: none;
-      position: absolute;
+      position: fixed;
       left: 0;
       top: 100px;
       width: 100%;
@@ -113,6 +115,8 @@
 
     &__nav--subrayado {
       color: rgb(255, 255, 255);
+      width: max-content;
+      text-transform: uppercase;
     }
   }
 

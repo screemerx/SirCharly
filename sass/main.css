@@ -17,6 +17,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  background-color: white;
 }
 
 .header__logo {
@@ -61,7 +63,7 @@
 }
 
 .header__nav--subrayado {
-  margin: 2rem;
+  margin: 1.5rem;
   text-decoration: none;
   color: #000;
 }
@@ -117,7 +119,7 @@
         -ms-flex-align: center;
             align-items: center;
     list-style: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 100px;
     width: 100%;
@@ -134,6 +136,10 @@
   }
   .header__nav--subrayado {
     color: white;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-transform: uppercase;
   }
   .logo {
     margin: 10px;
