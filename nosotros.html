@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/6ac406a0ca.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="/app.js"></script>
   </head>
 
   <body>
@@ -27,6 +28,10 @@
             <h2 class="header__titulo">Sir Charly</h2>
           </a>
         </div>
+
+        <button class="icono-menu" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
         <ul class="header__nav">
           <li>
@@ -43,16 +48,10 @@
             <a class="header__nav--subrayado" href="contacto.html">Contacto</a>
           </li>
           <li>
-            <a
-              class="header__nav--subrayado-carro"
-              href="carritodecompras.html"
-            >
+            <a class="header__nav--subrayado" href="carritodecompras.html">
               <img src="iconos/beers.png" width="35" height="35" />
             </a>
           </li>
-          <button class="menu">
-            <img src="/assets/menu.svg" alt="" />
-          </button>
         </ul>
       </nav>
     </header>
@@ -75,8 +74,8 @@
             similique sunt fugit sint?
           </p>
         </div>
-        <div class="nosotros__imagen">
-          <img src="/backgroundprueba/fabrica.jpg" />
+        <div>
+          <img class="nosotros__imagen" src="/backgroundprueba/fabrica.jpg" />
         </div>
       </div>
     </section>
