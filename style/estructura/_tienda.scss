@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   contain: style;
   flex-direction: column;
@@ -45,7 +45,7 @@
 }
 
 .galeriabeer {
-  width: 20rem;
+  width: 18rem;
 }
 
 .botton__producto {
@@ -94,7 +94,8 @@
   }
 
   .portada {
-    height: 40vh;
+    height: 80vh;
+    background-size: 200%;
   }
 }
 
@@ -124,7 +125,8 @@
     margin-bottom: 4rem;
   }
   .portada {
-    height: 40vh;
+    height: 80vh;
+    background-size: 220%;
   }
 
   .boton__tienda {

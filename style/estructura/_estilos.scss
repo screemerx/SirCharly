@@ -20,6 +20,14 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  &--titulo {
+    font-size: 2rem;
+  }
+  &--texto {
+    font-size: 1.2rem;
+    margin: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {

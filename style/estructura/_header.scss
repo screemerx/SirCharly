@@ -13,6 +13,7 @@
   align-items: center;
   position: fixed;
   background-color: white;
+  z-index: 100;
 
   &__logo {
     margin: auto;
@@ -86,7 +87,6 @@
 
   .header {
     height: 100px;
-
     &__logo {
       max-width: 70px;
     }
@@ -110,7 +110,7 @@
       justify-content: space-around;
       left: 100%;
       transition: left 0.3s;
-      z-index: 1;
+      z-index: 100;
     }
 
     &__nav--subrayado {
