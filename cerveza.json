@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "ipa",
+    "precio": 225,
+    "img": "./estilostienda/Ipa.jpg"
+  },
+
+  {
+    "nombre": "honey",
+    "precio": 225,
+    "img": "./estilostienda/honney.jpg"
+  },
+
+  {
+    "nombre": "american porter",
+    "precio": 225,
+    "img": "./estilostienda/americanporter.jpg"
+  },
+
+  {
+    "nombre": "neipa",
+    "precio": 300,
+    "img": "./estilostienda/Neipa.jpg"
+  },
+
+  {
+    "nombre": "pampa golden",
+    "precio": 225,
+    "img": "./estilostienda/PampaGolden.jpg"
+  },
+
+  {
+    "nombre": "red ale",
+    "precio": 225,
+    "img": "./estilostienda/redale.jpg"
+  }
+]

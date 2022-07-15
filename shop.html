@@ -7,11 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROMOCION CERVEZAS ARTESANALES</title>
-    <link rel="stylesheet" href="sass/main.css"
+    <link rel="stylesheet" href="sass/main.css">
     <meta name="description" content="Adquiere la cerveza artesanal mas rica de todo argentina, aprovecha las ofertas de este año 2022">
     <meta name="keywords"  content="CERVEZA,ARTESANAL,OFERTAS,PROMOCIONES,MAYORISTA,CHOPP,COMPRAR YA">
     <script src="https://kit.fontawesome.com/6ac406a0ca.js" crossorigin="anonymous"></script>
    <script defer src="/app.js"></script>
+   <script defer src="tienda.js"></script>
+   <link rel="stylesheet" href="tienda.css">
+
+
+   <!-- Toastyfy -->
+   <link
+   rel="stylesheet"
+   type="text/css"
+   href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+ />
   </head>
 
   <body>
@@ -63,53 +73,62 @@
         </ul>
       </nav>
     </header>
-  <body class="shop">
-    <main>
-      <div class="portada">
-        
-        <a class="boton__tienda" href="#comienzo"> Nuestra tienda </a>
-      </div>
-      <div class="shop__galeria" >
-        <div id="comienzo"data-aos="flip-right" data-aos-duration="700">
-          <img class="galeriabeer" src="./fotosshop/galeria.png" alt="" />
-          <h2>IPA</h2>
-          <p>$180</p>
-
-          <a class="botton__producto" href="shop.html"> Ver Producto </a>
-        </div>
-        <div data-aos="flip-right" "flip-right" data-aos-duration="700">
-          <img class="galeriabeer" src="./fotosshop/galeria.png" alt="" />
-          <h2>neipa</h2>
-          <p>$180</p>
-          <a class="botton__producto" href="shop.html" > Ver Producto </a>
-        </div>
-        <div data-aos="flip-right" "flip-right" data-aos-duration="700">
-          <img class="galeriabeer" src="./fotosshop/galeria.png" alt="" />
-          <h2>american porter</h2>
-          <p>$180</p>
-          <a class="botton__producto" href="shop.html"> Ver Producto </a>
-        </div>
-        <div data-aos="flip-right" "flip-right" data-aos-duration="700">
-          <img class="galeriabeer" src="./fotosshop/galeria.png" alt="" />
-          <h2>pampa golden</h2>
-          <p>$180</p>
-          <a class="botton__producto" href="shop.html"> Ver Producto </a>
-        </div>
-        <div data-aos="flip-right" "flip-right" data-aos-duration="700">
-          <img class="galeriabeer" src="./fotosshop/galeria.png" alt="" />
-          <h2>red ale</h2>
-          <p>$180</p>
-          <a class="botton__producto" href="shop.html"> Ver Producto </a>
-        </div>
-        <div data-aos="flip-right""flip-right" data-aos-duration="700">
-          <img class="galeriabeer" src="./fotosshop/galeria.png" alt="" />
-          <h2>honey</h2>
-          <p>$180</p>
-          <a class="botton__producto" href="shop.html"> Ver Producto </a>
+    <body>
+      <div id="contenedor" class="contenedor">
+        <div class="items">
+          <div id="row" class="row">
+  
+          </div>
         </div>
       </div>
-    </main>
-    
+  
+      
+  
+      <section>
+      <div class="contenedor">
+  
+      </div>
+      </section>
+  
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping__cart">
+      <div class="shopping__cart_container">
+          <h1 class="carrito__h1">CARRITO</h1>
+          <hr>
+          <div class="shopping__data">
+              <div>
+                  <div class="shopping-cart-header">
+                      <h6>Producto</h6>
+                  </div>
+              </div>
+              <div>
+                  <div class="shopping-cart-header">
+                      <h6 class="text-truncate">Precio</h6>
+                  </div>
+              </div>
+              <div >
+                  <div class="shopping-cart-header">
+                      <h6>Cantidad</h6>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- ? START SHOPPING CART ITEMS -->
+          <div class="shopping-cart-items shoppingCartItemsContainer">
+          </div>
+          <!-- ? END SHOPPING CART ITEMS -->
+          <!-- START TOTAL -->
+          <div class="total__container">
+                  <div class="shopping__cart__total">
+                      <p class="precio">Total</p>
+                      <p class="shoppingCartTotal">0$</p>
+                    
+                      <button class="btn__comprar"
+                          data-target="#comprarModal">Comprar</button>
+                  </div>
+          </div>
+        </div>
+          <!-- END TOTAL -->
     <footer class="footer">
       <div class="footer__1">
         <div class="footer__box">
@@ -159,10 +178,24 @@
         >
       </div>
     </footer>
-  
+   <!-- SCRIPTS -->
     <script>
       AOS.init();
     </script>
+    
+
+
+    <!-- Toastyfy -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <!-- sweet alert -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
   </body>
 </html>
 

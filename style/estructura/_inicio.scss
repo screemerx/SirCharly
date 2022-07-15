@@ -1,5 +1,5 @@
 .inicio {
-  background-image: url(/backgroundprueba/3beer.png);
+  background-image: url(/backgroundprueba/3beer.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -16,6 +16,7 @@
     font-size: 5rem;
     font-weight: 100;
     padding: 0rem 4rem 0rem 0rem;
+    text-shadow: 4px 4px 10px black;
   }
 
   &__frase {

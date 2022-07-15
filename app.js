@@ -1,3 +1,5 @@
+// MENU DE HAMBURGUESAS
+
 const iconoMenu = document.querySelector(".icono-menu");
 const headerNav = document.querySelector(".header__nav");
 
